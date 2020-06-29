@@ -23,3 +23,23 @@ describe('gets directories', () => {
     ])
   })
 })
+
+describe('gets files', () => {
+  it('sync with relative path', () => {
+    const files = dl.getFilesSync(relativePath)
+    expect(files).toEqual([
+      'file-1.txt',
+      'file-2.txt',
+      'file-3.txt'
+    ])
+  })
+
+  it('sync with absolute path', () => {
+    const files = dl.getFilesSync(absolutePath)
+    expect(files).toEqual([
+      'file-1.txt',
+      'file-2.txt',
+      'file-3.txt'
+    ])
+  })
+})

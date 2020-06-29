@@ -8,6 +8,14 @@ const getDirsSync = (path): String[] => {
   return dirs
 }
 
+const getFilesSync = (path): String[] => {
+  const readResult = fs.readdirSync(path)
+  const files = readResult.filter(f => fs.statSync(nodePath.join(path, f)).isFile())
+
+  return files
+}
+
 export default {
-  getDirsSync
+  getDirsSync,
+  getFilesSync
 }
