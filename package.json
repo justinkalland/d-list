@@ -30,8 +30,7 @@
   ],
   "files": [
     "dist/index.js",
-    "dist/index.d.ts",
-    "dist/lib"
+    "dist/index.d.ts"
   ],
   "devDependencies": {
     "@types/node": "^14.0.13",
