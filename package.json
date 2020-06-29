@@ -19,7 +19,14 @@
   },
   "author": "Justin Kalland <justin@kalland.com>",
   "license": "ISC",
-  "keywords": [],
+  "keywords": [
+    "fs",
+    "ls",
+    "subdirectory",
+    "directory",
+    "dir",
+    "recursive"
+  ],
   "files": [
     "dist/index.js",
     "dist/index.d.ts",
