@@ -1,0 +1,55 @@
+{
+  "name": "dir-list",
+  "version": "0.1.0",
+  "description": "Read the contents of a directory with filters. List only directories or files for a given path.",
+  "repository": "github:justinkalland/dir-list",
+  "homepage": "https://github.com/justinkalland/dir-list#readme",
+  "bugs": {
+    "url": "https://github.com/justinkalland/dir-list/issues"
+  },
+  "main": "./dist",
+  "scripts": {
+    "test": "jest",
+    "validate": "run-s test lint",
+    "build": "rm -rf dist/ && tsc",
+    "prerelease": "git checkout master && git pull origin master && npm run validate",
+    "release": "standard-version",
+    "prepublishOnly": "run-s test build",
+    "lint": "eslint ."
+  },
+  "author": "Justin Kalland <justin@kalland.com>",
+  "license": "ISC",
+  "keywords": [],
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/lib"
+  ],
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^26.0.0",
+    "eslint-config-jk-ts": "^1.5.0",
+    "jest": "^26.0.1",
+    "npm-run-all": "^4.1.5",
+    "standard-version": "^8.0.0",
+    "ts-jest": "^26.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.ts": "eslint"
+  },
+  "eslintConfig": {
+    "extends": "jk-ts"
+  }
+}
