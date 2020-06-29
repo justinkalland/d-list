@@ -25,7 +25,8 @@
     "subdirectory",
     "directory",
     "dir",
-    "recursive"
+    "recursive",
+    "filesystem"
   ],
   "files": [
     "dist/index.js",
