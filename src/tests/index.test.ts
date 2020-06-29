@@ -22,6 +22,24 @@ describe('gets directories', () => {
       'dir-3'
     ])
   })
+
+  it('with relative path', async () => {
+    const dirs = await dl.getDirs(relativePath)
+    expect(dirs).toEqual([
+      'dir-1',
+      'dir-2',
+      'dir-3'
+    ])
+  })
+
+  it('with absolute path', async () => {
+    const dirs = await dl.getDirs(absolutePath)
+    expect(dirs).toEqual([
+      'dir-1',
+      'dir-2',
+      'dir-3'
+    ])
+  })
 })
 
 describe('gets files', () => {
