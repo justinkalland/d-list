@@ -25,8 +25,19 @@ const getFilesSync = (path): String[] => {
   return files
 }
 
+const getFiles = async (path): Promise<String[]> => {
+  const readResult = await fs.promises.readdir(path)
+  const stats = await Promise.all(
+    readResult.map(f => fs.promises.stat(nodePath.join(path, f))) // eslint-disable-line @typescript-eslint/promise-function-async
+  )
+  const files = readResult.filter((f, i) => stats[i].isFile())
+
+  return files
+}
+
 export default {
   getDirsSync,
   getDirs,
-  getFilesSync
+  getFilesSync,
+  getFiles
 }
