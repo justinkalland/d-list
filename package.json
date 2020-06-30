@@ -1,6 +1,6 @@
 {
   "name": "dir-list",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Read the contents of a directory with filters. Provides wrappers to `fs.readdir` to return just files or directories.",
   "repository": "github:justinkalland/dir-list",
   "homepage": "https://github.com/justinkalland/dir-list#readme",
