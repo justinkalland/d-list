@@ -1,11 +1,11 @@
 {
-  "name": "dir-list",
+  "name": "d-list",
   "version": "1.0.0",
   "description": "Read the contents of a directory with filters. Provides wrappers to `fs.readdir` to return just files or directories.",
-  "repository": "github:justinkalland/dir-list",
-  "homepage": "https://github.com/justinkalland/dir-list#readme",
+  "repository": "github:justinkalland/d-list",
+  "homepage": "https://github.com/justinkalland/d-lis#readme",
   "bugs": {
-    "url": "https://github.com/justinkalland/dir-list/issues"
+    "url": "https://github.com/justinkalland/d-lis/issues"
   },
   "main": "./dist",
   "scripts": {

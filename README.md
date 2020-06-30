@@ -1,4 +1,4 @@
-# dir-list
+# d-list
 
 Node.js module to read the contents of a directory with filters. Provides wrappers to `fs.readdir` to return just files or directories.
 
@@ -17,7 +17,7 @@ Node.js module to read the contents of a directory with filters. Provides wrappe
 ## Installation
 
 ```bash
-npm install dir-list
+npm install d-list
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ example/
 ```
 
 ```typescript
-import dl from 'dir-list'
+import dl from 'd-list'
 const path = 'example'
 
 dl.getDirs(path).then(dirList => {
@@ -68,7 +68,7 @@ example/
 ```
 
 ```typescript
-import dl from 'dir-list'
+import dl from 'd-list'
 const path = 'example'
 
 const dirList = dl.getDirsSync(path)
