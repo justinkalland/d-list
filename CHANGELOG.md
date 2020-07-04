@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/justinkalland/d-list/compare/v1.0.0...v1.0.1) (2020-07-04)
+
+
+### Bug Fixes
+
+* change returned types from String to string ([ddc8765](https://github.com/justinkalland/d-list/commit/ddc87656a636c541dc9d67493bc5a11e4ac01c3a))
+
 ## [1.0.0](https://github.com/justinkalland/d-list/compare/v0.1.0...v1.0.0) (2020-06-30)
 
 
